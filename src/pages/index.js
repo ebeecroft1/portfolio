@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { Button, Card, CardGroup, Col, Container, Image, Row } from "react-bootstrap";
-import { Github, Link45deg } from "react-bootstrap-icons";
+import { EnvelopeFill, Github, Link45deg } from "react-bootstrap-icons";
 import { hero, pattern, profilePic } from "./index.module.css";
 import profile from "../images/profile.jpeg";
 import crema from "../images/crema.png";
@@ -15,12 +15,15 @@ const IndexPage = () => {
             <Container className={hero} fluid>
               <h1>Eric Beecroft</h1>
               <h3>G'day! I'm a software engineer based in Sydney with a passion for users and frontend development.</h3>
+              <Button variant="outline-dark" href="mailto:eric.beecroft@gmail.com">
+                <EnvelopeFill style={{fontSize: "22px"}}/>{' '}GET IN TOUCH
+              </Button>
             </Container>
           </Col>
 
           <Col>
             {/* <Container> */}
-              <Image src={profile} alt="Bitmoji of Eric" className={profilePic} fluid roundedCircle />
+              <Image src={profile} alt="Awkward profile picture of Eric" className={profilePic} fluid roundedCircle />
             {/* </Container> */}
           </Col>
         </Row>
@@ -34,9 +37,9 @@ const IndexPage = () => {
             <Card.Img variant="top" src={crema} />
             <Card.Body>
               <Card.Title>Crema</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">May 2022</Card.Subtitle>
               <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.
+                Cafe search and review website utilizing Google Maps API.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
