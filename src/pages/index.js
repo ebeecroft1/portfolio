@@ -11,24 +11,25 @@ const IndexPage = () => {
     <Layout pageTitle="Eric Beecroft">
       <div className={pattern}>
         <Row>
-          <Col style={{textAlign: "left"}}>
+          <Col style={{textAlign: "left"}} sm={12} md={6}>
             <Container className={hero} fluid>
               <h1>Eric Beecroft</h1>
               <h3>G'day! I'm a software engineer based in Sydney with a passion for users and frontend development.</h3>
             </Container>
           </Col>
 
-          <Col sm={12} md={6}>
-            <Container fluid>
+          <Col>
+            {/* <Container> */}
               <Image src={profile} alt="Bitmoji of Eric" className={profilePic} fluid roundedCircle />
-            </Container>
+            {/* </Container> */}
           </Col>
         </Row>
 
         <hr className="bg border-2 border-top border"></hr>
         <h2 style={{textAlign: "center"}}>Latest Projects</h2>
-        {/* <Row xs={1} md={2} className="g-4"> */}
-        <CardGroup>
+        <Row xs={1} md={2} lg={3} className="g-4">
+          <Col>
+        {/* <CardGroup> */}
           <Card>
             <Card.Img variant="top" src={crema} />
             <Card.Body>
@@ -48,6 +49,8 @@ const IndexPage = () => {
               </Button>
             </Card.Footer>
           </Card>
+          </Col>
+          <Col>
           <Card>
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
@@ -61,6 +64,8 @@ const IndexPage = () => {
               <small className="text-muted">Last updated 3 mins ago</small>
             </Card.Footer>
           </Card>
+          </Col>
+          <Col>
           <Card>
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
@@ -75,8 +80,9 @@ const IndexPage = () => {
               <small className="text-muted">Last updated 3 mins ago</small>
             </Card.Footer>
           </Card>
-        </CardGroup>
-        {/* </Row> */}
+        {/* </CardGroup> */}
+        </Col>
+        </Row>
       </div>
     </Layout> 
   );
