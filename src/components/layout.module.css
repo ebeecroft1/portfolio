@@ -1,4 +1,4 @@
-.container {
+/* .container {
     max-width: 500px;
     margin: 0 auto;
     font-family: sans-serif;
@@ -20,4 +20,12 @@
 
 .nav-link-text {
     color: black;
+} */
+
+/* body {
+    background-color: #FFFBFE;
+} */
+
+.pattern {
+    background: linear-gradient(#3c6e71, rgba(255,251,254,1))
 }

@@ -1,0 +1,20 @@
+.hero {
+    max-width: 500px;
+    margin: 20% auto;
+    font-family: sans-serif;
+}
+
+.pattern {
+    /* position: fixed; */
+    /* background-color: #FFFBFE;
+    opacity: 0.6;
+    background: repeating-linear-gradient( 45deg, #3C6E71, #3C6E71 5px, #FFFBFE 5px, #FFFBFE 25px ); */
+    /* background: linear-gradient(90deg, #3c6e71, rgba(255,251,254,1)) */
+}
+
+.profile-pic {
+    /* max-height: 300px; */
+    padding: 1em;
+    margin: 0 auto;
+}
+
