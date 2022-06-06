@@ -28,4 +28,5 @@
 
 .pattern {
     background: linear-gradient(#3c6e71, rgba(255,251,254,1))
+    /* background: radial-gradient(circle at 50% 50%,#3c6e71, #8aa8a9, #fffbfe) */
 }
