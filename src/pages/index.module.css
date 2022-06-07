@@ -4,6 +4,19 @@
     font-family: sans-serif;
 }
 
+.content {
+    padding: 3em 0;
+}
+
+.icon {
+    max-width: 100px;
+    padding: 1em;
+}
+
+.languages {
+    display: flexbox;
+}
+
 .pattern {
     /* position: fixed; */
     /* background-color: #FFFBFE;
