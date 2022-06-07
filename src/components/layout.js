@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        <Container className={pattern} fluid>
+        <div className={pattern} >
             <title>{ pageTitle }</title>
-            <Navbar bg="dark" variant="dark" expand="md" sticky="top">
+            <Navbar bg="dark" variant="dark" expand="md" sticky="top" fluid>
                 <Container fluid>
                     <Navbar.Brand href="/" style={{color: "white"}}>Eric Beecroft</Navbar.Brand>
                 
@@ -52,7 +52,7 @@ const Layout = ({ pageTitle, children }) => {
                 
             </Container>
 
-        </Container>
+        </div>
     )
 };
 
