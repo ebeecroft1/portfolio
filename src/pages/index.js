@@ -2,11 +2,12 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin, Link45deg } from "react-bootstrap-icons";
-import { content, hero, icon, languages, pattern, profilePic } from "./index.module.css";
+import { content, hero, icon, languages, pattern, profilePic, title } from "./index.module.css";
 import profile from "../images/profile.jpeg";
 import crema from "../images/crema.png";
 import starting5 from "../images/starting5.png";
 import tictactoe from "../images/tictactoe.png";
+import dragonAmpersand from "../images/dragonAmpersand.svg";
 
 const IndexPage = () => {
   return (
@@ -27,7 +28,7 @@ const IndexPage = () => {
                 </Button>
                 {' '}
                 <Button variant="outline-dark" href="mailto:eric.beecroft@gmail.com">
-                  <EnvelopeFill style={{fontSize: "2em"}}/>{' '}
+                  <EnvelopeFill style={{fontSize: "2em"}}/>
                 </Button>
               </Container>
             </Col>
@@ -45,7 +46,7 @@ const IndexPage = () => {
 
         <div className={content}>
           
-          <h2 style={{textAlign: "center"}}>Latest Projects</h2>
+          <h2 className={title} style={{textAlign: "center"}}>Latest Projects</h2>
           <Row xs={1} md={2} lg={3} className="g-4">
             <Col>
               <Card>
@@ -118,7 +119,7 @@ const IndexPage = () => {
         <hr className="bg border-2 border-top border"></hr>
 
         <div className={content} style={{textAlign: "center"}}>
-          <h2>Languages</h2>
+          <h2 className={title}>Languages</h2>
           <div className={languages}>
             {/* Javascript */}
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" className={icon}/>
@@ -142,6 +143,8 @@ const IndexPage = () => {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" className={icon}/>
             {/* Postgres */}
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className={icon}/>
+            {/* Bootstrap */}
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className={icon}/>
             {/* Github */}
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className={icon}/>
             {/* Firebase */}
@@ -150,6 +153,8 @@ const IndexPage = () => {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className={icon}/>
             {/* Heroku */}
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="Heroku" className={icon}/>
+            {/* D&D */}
+            <img src={dragonAmpersand} alt="Dungeons and Dragons" className={icon}/>
           </div>
         </div>
         

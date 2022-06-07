@@ -1,14 +1,14 @@
 import * as React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import {pattern} from "./layout.module.css";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
+import { footer, footerContact, footerText, pattern} from "./layout.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        // <Container fluid>
-        <div className={pattern}>
+        <Container className={pattern} fluid>
             <title>{ pageTitle }</title>
-            <Navbar bg="transparent" variant="dark" expand="md" sticky="top">
+            <Navbar bg="dark" variant="dark" expand="md" sticky="top">
                 <Container fluid>
                     <Navbar.Brand href="/" style={{color: "white"}}>Eric Beecroft</Navbar.Brand>
                 
@@ -28,8 +28,31 @@ const Layout = ({ pageTitle, children }) => {
                 {/* <h1>{ pageTitle }</h1> */}
                 { children }
             </Container>
-        </div>
-        // </Container>
+            <Container className={footer} fluid>
+                <Container className={footerContact} fluid>
+                    <Button variant="outline-light" href="mailto:eric.beecroft@gmail.com" style={{margin: "2em"}}>
+                    <EnvelopeFill style={{fontSize: "3em"}}/>
+                    </Button>
+                    {' '}
+                    <Button variant="outline-light" href="https://github.com/ebeecroft1" target="_blank" style={{margin: "2em"}}>
+                    <Github  style={{fontSize: "3em"}}/>
+                    </Button>
+                    {' '}
+                    <Button variant="outline-light" href="https://www.linkedin.com/in/eric-beecroft/" target="_blank" style={{margin: "2em"}}>
+                    <Linkedin style={{fontSize: "3em"}}/>
+                    </Button>
+                </Container>
+
+                <Container className={footerText}>
+                    <p>Site made with Gatsby and React</p>
+                </Container>
+                <Container className={footerText}>
+                    <p>&copy; 2022 Eric Beecroft</p>
+                </Container>
+                
+            </Container>
+
+        </Container>
     )
 };
 

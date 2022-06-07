@@ -26,7 +26,26 @@
     background-color: #FFFBFE;
 } */
 
+.footer {
+    background-color: black;
+}
+
+.footerContact {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    align-items: center;
+    justify-content: center;
+}
+
+.footerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pattern {
-    background: linear-gradient(#3c6e71, rgba(255,251,254,1))
+    /* background: linear-gradient(#3c6e71, rgba(255,251,254,1)); */
+    /* background: linear-gradient(#8AA8A9, rgba(255,251,254,1)); */
+    
     /* background: radial-gradient(circle at 50% 50%,#3c6e71, #8aa8a9, #fffbfe) */
 }
