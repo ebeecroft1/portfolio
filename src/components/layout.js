@@ -3,6 +3,7 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
 import { footer, footerContact, footerText, pattern} from "./layout.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "@fontsource/sora";
 
 const Layout = ({ pageTitle, children }) => {
     return (

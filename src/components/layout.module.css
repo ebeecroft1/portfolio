@@ -23,7 +23,7 @@
 } */
 
 /* body {
-    background-color: #FFFBFE;
+    background-color: black;
 } */
 
 .footer {
@@ -44,6 +44,7 @@
 }
 
 .pattern {
+    font-family: "Sora";
     /* background: linear-gradient(#3c6e71, rgba(255,251,254,1)); */
     /* background: linear-gradient(#8AA8A9, rgba(255,251,254,1)); */
     
