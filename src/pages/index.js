@@ -8,6 +8,7 @@ import crema from "../images/crema.png";
 import starting5 from "../images/starting5.png";
 import tictactoe from "../images/tictactoe.png";
 import dragonAmpersand from "../images/dragonAmpersand.svg";
+// import "@fontsource/spectral";
 
 const IndexPage = () => {
   return (
