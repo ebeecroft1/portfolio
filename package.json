@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/eczar": "^4.5.9",
     "@fontsource/sora": "^4.5.8",
     "@fontsource/spectral": "^4.5.9",
     "bootstrap": "^5.1.3",

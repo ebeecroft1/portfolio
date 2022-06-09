@@ -4,6 +4,7 @@ import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
 import { footer, footerContact, footerText, navColor, navLinkItem, pattern} from "./layout.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fontsource/sora";
+import "@fontsource/eczar";
 
 const Layout = ({ pageTitle, children }) => {
     return (
@@ -11,12 +12,11 @@ const Layout = ({ pageTitle, children }) => {
             <title>{ pageTitle }</title>
             <Navbar className={navColor} expand="md" sticky="top" fluid>
                 <Container fluid>
-                    <Navbar.Brand href="/" style={{color: "#E40C2B"}}>Eric Beecroft</Navbar.Brand>
+                    <Navbar.Brand href="/" style={{color: "#E40C2B", fontFamily: "Eczar", fontSize: "2em"}}>EB</Navbar.Brand>
                 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            {/* <Nav.Link href="/">Home</Nav.Link> */}
                             <Nav.Link className={navLinkItem} href="/about">About</Nav.Link>
                             <Nav.Link className={navLinkItem} href="/">Projects</Nav.Link>
                             <Nav.Link className={navLinkItem} href="/">Resume</Nav.Link>
@@ -26,7 +26,6 @@ const Layout = ({ pageTitle, children }) => {
                 </Container>
             </Navbar>
             <Container fluid>
-                {/* <h1>{ pageTitle }</h1> */}
                 { children }
             </Container>
             <Container className={footer} fluid>

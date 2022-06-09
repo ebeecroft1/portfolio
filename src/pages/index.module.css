@@ -1,10 +1,10 @@
+.content {
+    padding: 3em 2em;
+}
+
 .hero {
     max-width: 500px;
     margin: 10% auto;
-}
-
-.content {
-    padding: 3em 0;
 }
 
 .icon {
@@ -16,14 +16,6 @@
     display: flexbox;
 }
 
-.pattern {
-    /* position: fixed; */
-    /* background-color: #FFFBFE;
-    opacity: 0.6;
-    background: repeating-linear-gradient( 45deg, #3C6E71, #3C6E71 5px, #FFFBFE 5px, #FFFBFE 25px ); */
-    /* background: linear-gradient(90deg, #3c6e71, rgba(255,251,254,1)) */
-}
-
 .profile-pic {
     display: flex;
     align-items: center;
@@ -33,12 +25,16 @@
     margin: 0 auto;
 }
 
+.projects {
+    padding: 3em 0;
+}
+
 .title {
     padding-bottom: 1em;
+    font-family: "Eczar";
+    color: #E40C2B;
 }
 
 .welcome {
-    background-color: #F7F4E9;
-    color: #1D1D2C;
     padding: 3em 0;
 }

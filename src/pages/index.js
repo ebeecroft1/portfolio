@@ -2,13 +2,13 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin, Link45deg } from "react-bootstrap-icons";
-import { content, hero, icon, languages, pattern, profilePic, title, welcome } from "./index.module.css";
+import { content, hero, icon, languages, profilePic, projects, title, welcome } from "./index.module.css";
 import profile from "../images/profile.jpeg";
 import crema from "../images/crema.png";
 import starting5 from "../images/starting5.png";
 import tictactoe from "../images/tictactoe.png";
 import dragonAmpersand from "../images/dragonAmpersand.svg";
-// import "@fontsource/spectral";
+import "@fontsource/eczar";
 
 const IndexPage = () => {
   return (
@@ -18,7 +18,7 @@ const IndexPage = () => {
           <Row>
             <Col style={{textAlign: "right"}} sm={12} md={6}>
               <Container className={hero} fluid>
-                <h1 style={{color: "#E40C2B"}}>Eric Beecroft</h1>
+                <h1 className={title}>Eric Beecroft</h1>
                 <h3>G'day! I'm a software engineer based in Sydney with a passion for users and frontend development.</h3>
                 <Button variant="outline-dark" href="https://github.com/ebeecroft1" target="_blank">
                   <Github  style={{fontSize: "2em"}}/>
@@ -35,9 +35,7 @@ const IndexPage = () => {
             </Col>
 
             <Col>
-              {/* <Container> */}
-                <Image src={profile} alt="Awkward profile picture of Eric" className={profilePic} fluid roundedCircle />
-              {/* </Container> */}
+              <Image src={profile} alt="Awkward profile picture of Eric" className={profilePic} fluid roundedCircle />
             </Col>
           </Row>
 
@@ -45,7 +43,7 @@ const IndexPage = () => {
 
         <hr className="bg border-2 border-top border"></hr>
 
-        <div className={content}>
+        <div className={projects}>
           
           <h2 className={title} style={{textAlign: "center"}}>Latest Projects</h2>
           <Row xs={1} md={2} lg={3} className="g-4">
@@ -54,7 +52,6 @@ const IndexPage = () => {
                 <Card.Img variant="top" src={crema} />
                 <Card.Body>
                   <Card.Title>Crema</Card.Title>
-                  {/* <Card.Subtitle className="mb-2 text-muted">May 2022</Card.Subtitle> */}
                   <Card.Text>
                     Cafe search and review website utilizing Google Maps API.
                   </Card.Text>
@@ -76,7 +73,6 @@ const IndexPage = () => {
                 <Card.Img variant="top" src={starting5} />
                 <Card.Body>
                   <Card.Title>Starting 5</Card.Title>
-                  {/* <Card.Subtitle className="mb-2 text-muted">April 2022</Card.Subtitle> */}
                   <Card.Text>
                     NBA fantasy app where users can draft their Starting 5 players.
                   </Card.Text>
