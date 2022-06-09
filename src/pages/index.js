@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin, Link45deg } from "react-bootstrap-icons";
-import { content, hero, icon, languages, pattern, profilePic, title } from "./index.module.css";
+import { content, hero, icon, languages, pattern, profilePic, title, welcome } from "./index.module.css";
 import profile from "../images/profile.jpeg";
 import crema from "../images/crema.png";
 import starting5 from "../images/starting5.png";
@@ -13,12 +13,12 @@ import dragonAmpersand from "../images/dragonAmpersand.svg";
 const IndexPage = () => {
   return (
     <Layout pageTitle="Eric Beecroft">
-      <div className={pattern}>
-        <div className={content}>
+      <div className={content}>
+        <div className={welcome}>
           <Row>
             <Col style={{textAlign: "right"}} sm={12} md={6}>
               <Container className={hero} fluid>
-                <h1>Eric Beecroft</h1>
+                <h1 style={{color: "#E40C2B"}}>Eric Beecroft</h1>
                 <h3>G'day! I'm a software engineer based in Sydney with a passion for users and frontend development.</h3>
                 <Button variant="outline-dark" href="https://github.com/ebeecroft1" target="_blank">
                   <Github  style={{fontSize: "2em"}}/>

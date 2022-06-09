@@ -14,10 +14,6 @@
     padding-left: 0;
 }
 
-.nav-link-item {
-    padding-right: 2em;
-}
-
 .nav-link-text {
     color: black;
 } */
@@ -25,6 +21,20 @@
 /* body {
     background-color: black;
 } */
+
+.navColor {
+    background-color: #F7F4E9;
+}
+
+.navLinkItem {
+    color: #1D1D2C !important;
+    background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #54b3d6 50%,
+        #000 50%
+    ) !important;
+}
 
 .footer {
     background-color: #1D1D2C;
@@ -45,6 +55,7 @@
 
 .pattern {
     font-family: "Sora";
+    background-color: #F7F4E9;
     /* background: linear-gradient(#3c6e71, rgba(255,251,254,1)); */
     /* background: linear-gradient(#8AA8A9, rgba(255,251,254,1)); */
     

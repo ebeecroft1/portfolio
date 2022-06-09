@@ -36,3 +36,9 @@
 .title {
     padding-bottom: 1em;
 }
+
+.welcome {
+    background-color: #F7F4E9;
+    color: #1D1D2C;
+    padding: 3em 0;
+}
