@@ -2,13 +2,12 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin, Link45deg } from "react-bootstrap-icons";
-import { content, hero, icon, languages, profilePic, projects, title, welcome } from "./index.module.css";
+import { content, hero, icon, languages, profilePic, projects, title, toolbox, welcome } from "./index.module.css";
 import profile from "../images/profile.jpeg";
 import crema from "../images/crema.png";
 import starting5 from "../images/starting5.png";
 import tictactoe from "../images/tictactoe.png";
 import dragonAmpersand from "../images/dragonAmpersand.svg";
-import "@fontsource/eczar";
 
 const IndexPage = () => {
   return (
@@ -115,7 +114,7 @@ const IndexPage = () => {
 
         <hr className="bg border-2 border-top border"></hr>
 
-        <div className={content} style={{textAlign: "center"}}>
+        <div className={toolbox}>
           <h2 className={title}>Languages</h2>
           <div className={languages}>
             {/* Javascript */}

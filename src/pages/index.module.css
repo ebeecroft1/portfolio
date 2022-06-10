@@ -26,7 +26,8 @@
 }
 
 .projects {
-    padding: 3em 0;
+    padding: 3em 2em;
+    min-height: 75vh;
 }
 
 .title {
@@ -35,6 +36,13 @@
     color: #E40C2B;
 }
 
+.toolbox {
+    padding: 3em 2em;
+    min-height: 75vh;
+    text-align: center;
+}
+
 .welcome {
     padding: 3em 0;
+    min-height: 75vh;
 }

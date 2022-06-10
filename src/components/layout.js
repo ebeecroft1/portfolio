@@ -1,26 +1,26 @@
 import * as React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
-import { footer, footerContact, footerText, navColor, navLinkItem, pattern} from "./layout.module.css";
+import { footer, footerContact, footerText, logo, main, navColor, navLinkItem} from "./layout.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fontsource/sora";
 import "@fontsource/eczar";
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        <div className={pattern} >
+        <div className={main} >
             <title>{ pageTitle }</title>
             <Navbar className={navColor} expand="md" sticky="top" fluid>
                 <Container fluid>
-                    <Navbar.Brand href="/" style={{color: "#E40C2B", fontFamily: "Eczar", fontSize: "2em"}}>EB</Navbar.Brand>
+                    <Navbar.Brand href="/" className={logo}>EB</Navbar.Brand>
                 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link className={navLinkItem} href="/about">About</Nav.Link>
-                            <Nav.Link className={navLinkItem} href="/">Projects</Nav.Link>
-                            <Nav.Link className={navLinkItem} href="/">Resume</Nav.Link>
-                            <Nav.Link className={navLinkItem} href="/">Contact</Nav.Link>
+                            <Nav.Link className={navLinkItem} href="/projects">Projects</Nav.Link>
+                            <Nav.Link className={navLinkItem} href="/resume">Resume</Nav.Link>
+                            <Nav.Link className={navLinkItem} href="/contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

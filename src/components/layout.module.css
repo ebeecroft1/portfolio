@@ -4,7 +4,7 @@
 
 .navLinkItem {
     color: #1D1D2C !important;
-    transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out;
 }
 
 .navLinkItem:hover {
@@ -30,7 +30,23 @@
     color: #F7F4E9;
 }
 
-.pattern {
+.logo {
+    color: #E40C2B !important;
+    font-family: "Eczar";
+    font-size: 1.5em !important;
+    border: 1px solid #E40C2B;
+    border-radius: 10%;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    color: #F7F4E9 !important;
+    background-color: #E40C2B;
+}
+
+.main {
     font-family: "Sora";
     background-color: #F7F4E9;
     color: #1D1D2C;

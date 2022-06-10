@@ -1,0 +1,11 @@
+.content {
+    padding: 3em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.title {
+    padding-bottom: 1em;
+    font-family: "Eczar";
+}
