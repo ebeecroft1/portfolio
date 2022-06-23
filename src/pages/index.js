@@ -94,7 +94,7 @@ const IndexPage = () => {
                 <Card.Body>
                   <Card.Title>Tic Tac Toe</Card.Title>
                   <Card.Text>
-                    The classic Tic Tac Toe with one or two easter eggs utilizing Javascript for the game logic.{' '}
+                    The classic Tic Tac Toe with one or two easter eggs.
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -115,7 +115,7 @@ const IndexPage = () => {
         <hr className="bg border-2 border-top border"></hr>
 
         <div className={toolbox}>
-          <h2 className={title}>Languages</h2>
+          <h2 className={title}>Tech Skills</h2>  
           <div className={languages}>
             {/* Javascript */}
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" className={icon}/>
