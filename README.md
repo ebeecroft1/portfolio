@@ -8,5 +8,4 @@ View deployed site:
 ## Tech Stack
 - Gatsby
 - React
-- CSS Modules
 - React Bootstrap
