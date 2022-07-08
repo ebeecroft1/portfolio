@@ -9,7 +9,7 @@ const ProjectsPage = () => {
         <Layout pageTitle="Projects | Eric Beecroft">
             <Container className={content} fluid>
                 <ConeStriped style={{fontSize: "5em", color: "#EBA63F"}}/>
-                <h1 className={title}>Coming soon</h1>
+                <h1 className={title}> Coming soon </h1>
                 <ConeStriped style={{fontSize: "5em", color: "#EBA63F"}}/>
             </Container>
         </Layout>
